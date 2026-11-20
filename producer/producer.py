@@ -4,6 +4,7 @@ import time
 import random
 import sys
 from redis import Redis, ConnectionError, TimeoutError
+
 # these are environment variables defined in the deployment file for the Redis connection
 # so that we can modify Redis configurations from yaml file without touching the python code! 
 REDIS_HOST = os.getenv("REDIS_HOST", "redis-service.smart-factory.svc.cluster.local")
