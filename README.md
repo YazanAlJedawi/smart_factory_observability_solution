@@ -2,6 +2,8 @@
 
 A containerized, Kubernetes-orchestrated prototype that generates synthetic smart-factory sensor telemetry, buffers it in Redis, evaluates machine conditions in a Python processing worker, and submits passive service-check results and performance data to Checkmk over a TLS-protected TCP connection.
 
+a minimalistic Flow diagram is available in the `/docs` directory !
+
 > **Project status:** Learning / proof-of-concept implementation. The project demonstrates a distributed telemetry pipeline and monitoring integration. It is not yet a production-grade industrial IoT platform and does not currently ingest data from physical sensors or industrial protocols.
 
 ---
@@ -74,7 +76,7 @@ flowchart TD
     G --> H[Determine overall state<br/>OK / WARNING / CRITICAL]
     H --> I[Build passive service-check command<br/>and performance data]
     I -->|TLS over TCP :6557| J[Checkmk monitoring server]
-    J --> K[Host and service status<br/>performance graphs and dashboard]
+    J --> K[track k3s Nodes & factory machine <br/>performance via dashboards]
 ```
 
 ### Component responsibilities
