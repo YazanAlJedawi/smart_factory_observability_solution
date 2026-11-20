@@ -4,8 +4,6 @@ A containerized, Kubernetes-orchestrated prototype that generates synthetic smar
 
 a minimalistic Flow diagram is available in the `/docs` directory !
 
-> **Project status:** Learning / proof-of-concept implementation. The project demonstrates a distributed telemetry pipeline and monitoring integration. It is not yet a production-grade industrial IoT platform and does not currently ingest data from physical sensors or industrial protocols.
-
 ---
 
 ## Table of contents
